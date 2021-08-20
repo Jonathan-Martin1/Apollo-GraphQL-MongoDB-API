@@ -1,0 +1,35 @@
+{
+  "name": "apollo-graphql-mongodb-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --exec babel-node -,- src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JonathanMartin-gif/Apollo-GraphQL-MongoDB-API.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JonathanMartin-gif/Apollo-GraphQL-MongoDB-API/issues"
+  },
+  "homepage": "https://github.com/JonathanMartin-gif/Apollo-GraphQL-MongoDB-API#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.14.8",
+    "@babel/core": "^7.15.0",
+    "@babel/node": "^7.14.9",
+    "@babel/preset-env": "^7.15.0",
+    "add": "^2.0.6",
+    "nodemon": "^2.0.12"
+  },
+  "dependencies": {
+    "apollo-server-express": "^3.1.2",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "graphql": "^15.5.1",
+    "mongoose": "^5.13.7"
+  }
+}
