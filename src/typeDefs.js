@@ -2,14 +2,20 @@ import { gql } from 'apollo-server-express';
 
 export const typeDefs = gql`
   type Query {
-    hello: String!
-    cats: [Cat!]!
+    country: String!
+    year: String!
+    areaSQKM: Float!
+    totalPopulation: Float!
+    findStats: [Stats!]!
   }
-  type Cat {
+  type Stats {
     id: ID!
-    name: String!
+    country: String!
+    year: String!
+    areaSQKM: Float!
+    totalPopulation: Float!
   }
   type Mutation {
-    createCat(name: String!): Cat!
+    createStats(country: String!, year: String!, areaSQKM: Float!, totalPopulation: Float!): Stats!
   }
 `;
