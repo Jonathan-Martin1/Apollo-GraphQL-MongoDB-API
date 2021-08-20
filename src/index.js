@@ -35,7 +35,9 @@ app.get("/rest", function (req, res) {
     res.json({ data: "api working" });
 });
 
-app.listen(4000, function () {
-    console.log(`server running on port 4000`);
-    console.log(`gql path is ${apolloServer.graphqlPath}`);
-});
+app.listen({ port: process.env.PORT || 4000 }).then(({ url }) => {
+  console.log(`
+    🚀  Server is ready at ${url}
+    📭  Query at https://studio.apollographql.com/dev
+  `);
+})
